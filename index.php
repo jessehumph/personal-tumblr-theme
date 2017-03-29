@@ -572,6 +572,9 @@
 
 
         .caption{display:none;}
+
+
+        .hidden_posts{display:none;}
     </style>
 
 
@@ -1279,33 +1282,7 @@
 
 
             {block:Photoset}
-            {Photoset}
-
-                <!--figure
-                    {block:Caption} class="with-caption"{/block:Caption}>
-
-                {block:Photos}
-
-                    <img src="{PhotoURL-HighRes}" alt="{PhotoAlt}"
-                         width="{PhotoWidth-HighRes}" height="{PhotoHeight-HighRes}">
-
-                    {block:Caption}
-                        <div class="caption">
-                            {Caption}
-                        </div>
-                    {/block:Caption}
-
-                {/block:Photos}
-
-
-                {block:Caption}
-                    <figcaption class="caption">
-                        {Caption}
-                    </figcaption>
-                {/block:Caption}
-
-                </figure-->
-
+                {Photoset}
             {/block:Photoset}
 
 

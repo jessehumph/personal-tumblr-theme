@@ -1170,8 +1170,9 @@
 
 
             {block:Photoset}
+            {Photoset}
 
-                <figure
+                <!--figure
                     {block:Caption} class="with-caption"{/block:Caption}>
 
                 {block:Photos}
@@ -1194,7 +1195,7 @@
                     </figcaption>
                 {/block:Caption}
 
-                </figure>
+                </figure-->
 
             {/block:Photoset}
 

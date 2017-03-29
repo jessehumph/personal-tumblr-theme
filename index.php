@@ -878,7 +878,7 @@
 </div>
 
 
-<header role="banner" class="header">
+<header role="banner" class="header salvia-header">
 
     {block:ifCustomlink1title}
         <span>
@@ -949,7 +949,8 @@
 
 </header>
 
-<main role="main" class="content">
+<div class="scrolling"></div>
+<main id="content-per" role="main" class="content">
 
 
 
@@ -1643,7 +1644,7 @@
 
 </main>
 
-<footer class="footer">
+<footer class="footer copyrighting">
     <p>
         <small>
             {block:ShowTitle}{Title} {/block:ShowTitle}&copy; {CopyrightYears}

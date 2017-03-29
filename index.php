@@ -332,6 +332,8 @@
     <meta name="text:Occupation Link 2" content=""/>
     <meta name="text:Occupation Link 3" content=""/>
     {/block:Hidden}
+
+
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
           type="text/css" media="all">
@@ -2711,24 +2713,24 @@
 
                 </figure>
 
+
+                {LikeButton color="grey"}
+
+
+                {ReblogButton color="grey"}
+
+
+                {block:IndexPage}
+
+                    <p>
+                        <a href="{Permalink}" class="permalink">
+                            {lang:Permalink}
+                        </a>
+                    </p>
+
+                {/block:IndexPage}
+
             {/block:Photo}
-
-
-            {LikeButton color="grey"}
-
-
-            {ReblogButton color="grey"}
-
-
-            {block:IndexPage}
-
-                <p>
-                    <a href="{Permalink}" class="permalink">
-                        {lang:Permalink}
-                    </a>
-                </p>
-
-            {/block:IndexPage}
 
         </article>
     {/block:Posts}

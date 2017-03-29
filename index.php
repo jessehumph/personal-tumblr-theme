@@ -869,6 +869,7 @@
         </div>
     </div>
 </div>
+</div>
 
 <div class="trigger-buttons">
     <a data-icon="&#xe022" original-icon="&#xe022" close-icon="&#xe023"

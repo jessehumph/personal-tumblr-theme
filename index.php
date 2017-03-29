@@ -1062,9 +1062,9 @@
 
     <!-- Posts -->
     {block:Posts}
-        <article class="post posts {select:Change Layout} {PostType} {TagsAsClasses}">
 
             {block:Photo}
+        <article class="post posts {select:Change Layout} {PostType} {TagsAsClasses}">
 
                 <figure
                     class="{block:HighRes}high-res{/block:HighRes}{block:Caption} with-caption{/block:Caption}"
@@ -1101,10 +1101,12 @@
 
                 {/block:IndexPage}
 
+        </article>
             {/block:Photo}
 
 
             {block:Date}
+        <article class="post posts {select:Change Layout} {PostType} {TagsAsClasses}">
 
                 {block:NewDayDate}
                     <p>
@@ -1135,10 +1137,12 @@
 
                 {/block:IndexPage}
 
+        </article>
             {/block:Date}
 
 
             {block:Text}
+        <article class="post posts {select:Change Layout} {PostType} {TagsAsClasses}">
 
                 {block:Title}
                     <h2>
@@ -1171,10 +1175,12 @@
 
                 {/block:IndexPage}
 
+        </article>
             {/block:Text}
 
 
             {block:Quote}
+        <article class="post posts {select:Change Layout} {PostType} {TagsAsClasses}">
 
                 <blockquote class="words {Length}">
                     &#8220;{Quote}&#8221;
@@ -1203,10 +1209,12 @@
 
                 {/block:IndexPage}
 
+        </article>
             {/block:Quote}
 
 
             {block:Link}
+        <article class="post posts {select:Change Layout} {PostType} {TagsAsClasses}">
 
                 <h2>
                     <a href="{URL}" {Target}>
@@ -1237,10 +1245,12 @@
 
                 {/block:IndexPage}
 
+        </article>
             {/block:Link}
 
 
             {block:Audio}
+        <article class="post posts {select:Change Layout} {PostType} {TagsAsClasses}">
 
                 {block:AlbumArt}
                     <img src="{AlbumArtURL}" alt="">
@@ -1278,15 +1288,19 @@
 
                 {/block:IndexPage}
 
+        </article>
             {/block:Audio}
 
 
             {block:Photoset}
+        <article class="post posts {select:Change Layout} {PostType} {TagsAsClasses}">
                 {Photoset}
+        </article>
             {/block:Photoset}
 
 
             {block:Panorama}
+        <article class="post posts {select:Change Layout} {PostType} {TagsAsClasses}">
 
                 <figure {block:Caption} class="with-caption"{/block:Caption} >
 
@@ -1321,10 +1335,12 @@
 
                 {/block:IndexPage}
 
+        </article>
             {/block:Panorama}
 
 
             {block:Video}
+        <article class="post posts {select:Change Layout} {PostType} {TagsAsClasses}">
 
                 <figure {block:Caption} class="with-caption" {/block:Caption} >
 
@@ -1357,10 +1373,12 @@
 
                 {/block:IndexPage}
 
+        </article>
             {/block:Video}
 
 
             {block:Chat}
+        <article class="post posts {select:Change Layout} {PostType} {TagsAsClasses}">
 
                 {block:Title}
                     <h2>
@@ -1408,10 +1426,12 @@
 
                 {/block:IndexPage}
 
+        </article>
             {/block:Chat}
 
 
             {block:Answer}
+        <article class="post posts {select:Change Layout} {PostType} {TagsAsClasses}">
 
                 <section class="question">
                     <img src="{AskerPortraitURL-48}">
@@ -1456,6 +1476,7 @@
 
                 {/block:IndexPage}
 
+        </article>
             {/block:Answer}
 
         </article>

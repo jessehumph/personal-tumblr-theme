@@ -1305,13 +1305,13 @@
             {/block:Answer}
 
 
+            {block:IndexPage}
+
+
             {LikeButton color="grey"}
 
 
             {ReblogButton color="grey"}
-
-
-            {block:IndexPage}
 
                 <p>
                     <a href="{Permalink}" class="permalink">

@@ -530,6 +530,7 @@
         .salvia-description{font-family:{font:Header Description Font}}
         .salvia-occupations a{font-family:{font:Header Occupation Font}}
         .hidden-menu-link a{font-family:{font:Hidden Menu Link Font}}
+        header {height:auto !important;}
         .header-title a{color:{color:Header Title Color}}
         .header-description,.header-description a{color:{color:Header Desscription Color}}
         .salvia-occupations a{color:{color:Header Occupation Texts Color}}
@@ -881,6 +882,10 @@
 </div>
 
 
+    {block:ShowHeaderImage}
+        <img src="{HeaderImage}">
+    {/block:ShowHeaderImage}
+
 <header role="banner" class="header salvia-header">
 
         <div class="salvia-title">
@@ -944,15 +949,11 @@
             {/block:ifOccupation3}
         </div>
 
-    {block:ShowHeaderImage}
-        <img src="{HeaderImage}">
-    {/block:ShowHeaderImage}
-
     {block:ShowAvatar}
         <img src="{PortraitURL-128}">
     {/block:ShowAvatar}
 
-    <nav role="navigation">
+    <!--nav role="navigation">
         <ul>
             {block:HasPages}
                 {block:Pages}
@@ -985,7 +986,7 @@
         <input role="textbox" type="search" placeholder="{lang:Search}" name="q"
                value="{SearchQuery}">
         <input role="button" type="submit" value="{lang:Search}">
-    </form>
+    </form-->
 
 </header>
 

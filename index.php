@@ -882,6 +882,45 @@
 
 
 <header role="banner" class="header salvia-header">
+        <div class="salvia-title">
+            <a href="/">
+                {block:ifnotlogoimage}
+                {title}
+                {/block:ifnotlogoimage}
+
+                {block:iflogoimage}
+                <img src="{image:logo}">
+                {/block:iflogoimage}
+            </a>
+        </div>
+        <div class="salvia-description">
+            {description}
+        </div>
+
+        <div class="salvia-occupations">
+
+            {block:ifOccupation1}
+            <a {block:ifOccupationlink1}onclick="window.location.href='{text:Occupation Link 1}'" style="cursor:pointer"{/block:ifOccupationlink1}>
+            {text:Occupation 1}
+            </a>
+            {/block:ifOccupation1}
+
+
+
+            {block:ifOccupation2}
+            <a {block:ifOccupationlink2}onclick="window.location.href='{text:Occupation Link 2}'" style="cursor:pointer"{/block:ifOccupationlink2}>
+            {text:Occupation 2}
+            </a>
+            {/block:ifOccupation2}
+
+
+
+            {block:ifOccupation3}
+            <a {block:ifOccupationlink3}onclick="window.location.href='{text:Occupation Link 3}'" style="cursor:pointer"{/block:ifOccupationlink3}>
+            {text:Occupation 3}
+            </a>
+            {/block:ifOccupation3}
+        </div>
 
     {block:ifCustomlink1title}
         <span>

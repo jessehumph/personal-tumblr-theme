@@ -990,8 +990,40 @@
 
 </header>
 
+
+<!-- Lightbox -->
+<div class="lightbox-plugin">
+    <div class="lightbox-arrow-left lightbox-arrows"><
+    </div>
+    <div class="lightbox-arrow-right lightbox-arrows">>
+    </div>
+
+    <div class="lightbox-image-share">
+        <a href="" class="lightbox-link">
+            <img src=""></a>
+        <div class="lightbox-share">
+            <a data-icon="'"></a><a class="lightbox-email">Email</a>
+            <a data-icon="i"></a><a class="lightbox-facebook">Facebook</a>
+            <a data-icon="l"></a><a class="lightbox-pinterest">Pin it</a>
+            <a data-icon="d"></a><a class="lightbox-twitter">Tweet</a>
+        </div>
+        <div class="lightbox-tags"></div>
+    </div>
+</div>
+<div id="preloading-container">
+    {block:posts}
+    {block:photo}
+    <div id="preloading-image"><img src="{photoURL-100}"></div>
+    {/block:photo}
+    {/block:posts}
+</div>
+
+<!-- Lightbox -->
+
+
+
 <div class="scrolling"></div>
-<main id="content-per" role="main" class="content">
+<main id="content-per" role="main" class="content body-one-column-{select:Change Layout}">
 
 
 
@@ -1020,7 +1052,7 @@
                 {lang:TagResultCount posts tagged Tag 3}
             </p>
         </div>
-        <article class="post {PostType} {TagsAsClasses}">
+        <article class="post posts {select:Change Layout} {PostType} {TagsAsClasses}">
 
             {block:Photo}
 
@@ -1296,7 +1328,7 @@
 
     <!-- Permalink Pages -->
     {block:PermalinkPage}
-        <article class="post {PostType} {TagsAsClasses}">
+        <article class="post posts {select:Change Layout} {PostType} {TagsAsClasses}">
 
             {block:Photo}
 
@@ -1597,7 +1629,7 @@
 
     <!-- Posts -->
     {block:Posts}
-        <article class="post {PostType} {TagsAsClasses}">
+        <article class="post posts {select:Change Layout} {PostType} {TagsAsClasses}">
 
             {block:Photo}
 

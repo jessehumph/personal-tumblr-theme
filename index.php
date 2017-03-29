@@ -73,7 +73,9 @@
 
 
     </script>
-    <script type="text/javascript">
+
+    <script type="javascript">
+        something;
         WebFontConfig = {
             google: {families: ['Lato:400,300,700,100:latin', 'Open+Sans:400,300,700,100:latin', 'Nothing+You+Could+Do', 'Roboto:400,100,300,500,700:latin', 'Nunito:300,400,700:latin', 'Montserrat:100,200,300,400,700:latin', 'Arimo:400,700:latin']}
         };
@@ -84,7 +86,8 @@
             wf.async = 'true';
             var s = document.getElementsByTagName('script')[0];
             s.parentNode.insertBefore(wf, s);
-        })(); </script>
+        })();
+    </script>
 
     {block:Hidden}
     <!--

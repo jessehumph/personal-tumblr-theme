@@ -1306,23 +1306,6 @@
 
                 </figure-->
 
-
-                {LikeButton color="grey"}
-
-
-                {ReblogButton color="grey"}
-
-
-                {block:IndexPage}
-
-                    <p>
-                        <a href="{Permalink}" class="permalink">
-                            {lang:Permalink}
-                        </a>
-                    </p>
-
-                {/block:IndexPage}
-
             {/block:Photoset}
 
 

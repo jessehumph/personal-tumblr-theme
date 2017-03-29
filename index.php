@@ -1736,6 +1736,30 @@
                 </p>
             </div>
             <article class="post {PostType} {TagsAsClasses}">
+
+                {block:Photo}
+
+                    <figure
+                        class="{block:HighRes}high-res{/block:HighRes}{block:Caption} with-caption{/block:Caption}"
+                        data-photo-width="{PhotoWidth-HighRes}">
+
+                        {LinkOpenTag}
+                            <img src="{PhotoURL-HighRes}" alt="{PhotoAlt}"
+                                  width="{PhotoWidth-HighRes}"
+                                  height="{PhotoHeight-HighRes}" />
+                        {LinkCloseTag}
+
+                        {block:Caption}
+                            <figcaption class="caption">
+                                {Caption}
+                            </figcaption>
+                        {/block:Caption}
+
+                    </figure>
+
+                {/block:Photo}
+                
+
                 {block:Date}
 
                     {block:NewDayDate}
@@ -1982,7 +2006,286 @@
             </article>
         {/block:TagPage}
 
-    
+
+        <!-- Permalink Pages -->
+        {block:PermalinkPage}
+            <div class="result">
+                <p>
+                    {lang:TagResultCount posts tagged Tag 3}
+                </p>
+            </div>
+            <article class="post {PostType} {TagsAsClasses}">
+
+                {block:Photo}
+
+                    <figure
+                        class="{block:HighRes}high-res{/block:HighRes}{block:Caption} with-caption{/block:Caption}"
+                        data-photo-width="{PhotoWidth-HighRes}">
+
+                        {LinkOpenTag}
+                            <img src="{PhotoURL-HighRes}" alt="{PhotoAlt}"
+                                  width="{PhotoWidth-HighRes}"
+                                  height="{PhotoHeight-HighRes}" />
+                        {LinkCloseTag}
+
+                        {block:Caption}
+                            <figcaption class="caption">
+                                {Caption}
+                            </figcaption>
+                        {/block:Caption}
+
+                    </figure>
+
+                {/block:Photo}
+
+
+                {block:Date}
+
+                    {block:NewDayDate}
+                        <p>
+                            {DayOfWeek}, {Month} {DayOfMonth}, {Year}
+                        </p>
+                    {/block:NewDayDate}
+
+                    {block:SameDayDate}
+                        <p>
+                            {DayOfWeek}, {Month} {DayOfMonth}, {Year}
+                        </p>
+                    {/block:SameDayDate}
+
+                {/block:Date}
+
+
+                {block:Text}
+
+                    {block:Title}
+                        <h2>
+                            <a href="{Permalink}">
+                                {Title}
+                            </a>
+                        </h2>
+                    {/block:Title}
+
+                    {block:Body}
+                        <div class="body-text">
+                            {Body}
+                        </div>
+                    {/block:Body}
+
+                {/block:Text}
+
+
+                {block:Quote}
+
+                    <blockquote class="words {Length}">
+                        &#8220;{Quote}&#8221;
+                    </blockquote>
+
+                    {block:Source}
+                        <p class="source">
+                            &mdash; {Source}
+                        </p>
+                    {/block:Source}
+
+                {/block:Quote}
+
+
+                {block:Link}
+
+                    <h2>
+                        <a href="{URL}" {Target}>
+                            {Name}
+                        </a>
+                    </h2>
+
+                    {block:Description}
+                        <div class="caption">
+                            {Description}
+                        </div>
+                    {/block:Description}
+
+                {/block:Link}
+
+
+                {block:Audio}
+
+                    {block:AlbumArt}
+                        <img src="{AlbumArtURL}" alt="">
+                    {/block:AlbumArt}
+
+                    <div class="audio-player">
+                        {block:AudioEmbed}
+                            {AudioEmbed color="white"}
+                        {/block:AudioEmbed}
+                        {block:AudioPlayer}
+                            {AudioPlayerBlack}
+                        {/block:AudioPlayer}
+                    </div>
+
+                    {block:Caption}
+                        <div class="caption">
+                            {Caption}
+                        </div>
+                    {/block:Caption}
+
+                {/block:Audio}
+
+
+                {block:Photoset}
+
+                    <figure
+                        {block:Caption} class="with-caption"{/block:Caption}>
+
+                    {block:Photos}
+
+                        <img src="{PhotoURL-HighRes}" alt="{PhotoAlt}"
+                             width="{PhotoWidth-HighRes}" height="{PhotoHeight-HighRes}">
+
+                        {block:Caption}
+                            <div class="caption">
+                                {Caption}
+                            </div>
+                        {/block:Caption}
+
+                    {/block:Photos}
+
+
+                    {block:Caption}
+                        <figcaption class="caption">
+                            {Caption}
+                        </figcaption>
+                    {/block:Caption}
+
+                    </figure>
+
+                {/block:Photoset}
+
+
+                {block:Panorama}
+
+                    <figure {block:Caption} class="with-caption"{/block:Caption} >
+
+                    {LinkOpenTag}
+                        <img src="{PhotoURL-Panorama}"
+                             width="{PhotoWidth-Panorama}"
+                             height="{PhotoHeight-Panorama}" alt="{PhotoAlt}"/>
+                    {LinkCloseTag}
+
+                    {block:Caption}
+                        <figcaption class="caption">
+                            {Caption}
+                        </figcaption>
+                    {/block:Caption}
+
+                    </figure>
+
+                {/block:Panorama}
+
+
+                {block:Video}
+
+                    <figure {block:Caption} class="with-caption" {/block:Caption} >
+
+                    <div class="video-player">
+                        {Video-700}
+                    </div>
+
+                    {block:Caption}
+                        <figcaption class="caption">
+                            {Caption}
+                        </figcaption>
+                    {/block:Caption}
+
+                    </figure>
+
+                {/block:Video}
+
+
+                {block:Chat}
+
+                    {block:Title}
+                        <h2>
+                            {Title}
+                        </h2>
+                    {/block:Title}
+
+
+                    <ul class="conversation">
+
+                        {block:Lines}
+
+                            <li class="line {Alt}">
+
+                                {block:Label}
+                                    <span class="person">
+                                        {Label}
+                                    </span>
+                                {/block:Label}
+
+                                <span class="person-said">
+                                    {Line}
+                                </span>
+
+                            </li>
+
+                        {/block:Lines}
+
+                    </ul>
+
+                {/block:Chat}
+
+
+                {block:Answer}
+
+                    <section class="question">
+                        <img src="{AskerPortraitURL-48}">
+                        <div class="asker">
+                            {lang:Asker asked}:
+                        </div>
+                        <div class="asker-question">
+                            {Question}
+                        </div>
+                    </section>
+
+                    {block:Answerer}
+                        <section class="answerer">
+                            <img src="{AnswererPortraitURL-48}">
+                            <p>
+                                {lang:Answer} {Answerer}:
+                            </p>
+                            <div class="answerer-answer">
+                                {Answer}
+                            </div>
+                        </section>
+                    {/block:Answerer}
+
+                    <div class="replies">
+                        {Replies}
+                    </div>
+
+                {/block:Answer}
+
+
+                {LikeButton color="grey"}
+
+
+                {ReblogButton color="grey"}
+
+
+                {block:IndexPage}
+
+                    <p>
+                        <a href="{Permalink}" class="permalink">
+                            {lang:Permalink}
+                        </a>
+                    </p>
+
+                {/block:IndexPage}
+
+            </article>
+        {/block:PermalinkPage}
+
+
         <article class="post {PostType} {TagsAsClasses}">
 
             {block:Photo}

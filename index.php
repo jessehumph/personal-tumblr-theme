@@ -575,7 +575,7 @@
 
 
 </head>
-<body>
+<body class="not-mobile">
 
 
 <div class="hidden-menu">

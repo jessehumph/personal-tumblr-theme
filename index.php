@@ -705,11 +705,11 @@
     </style>
 
     <style>
-        .header_filter a{font-family:{font:Header Filter Font}}
-        .header_filter a{color:{color:Header Filter Texts Color}}
-        .header_filter a{border-bottom:1px solid {color:Header Filter Border Color}}
-        .header_filter a:hover{color:{color:Header Filter Hover Texts Color}}
-        .header_filter a:hover{border-bottom:1px solid {color:Header Filter Hover Border Color}}
+        .header_filter {font-family:{font:Header Filter Font}}
+        .header_filter {color:{color:Header Filter Texts Color}}
+        .header_filter {border-bottom:1px solid {color:Header Filter Border Color}}
+        .header_filter:hover{color:{color:Header Filter Hover Texts Color}}
+        .header_filter:hover{border-bottom:1px solid {color:Header Filter Hover Border Color}}
     </style>
 
 </head>

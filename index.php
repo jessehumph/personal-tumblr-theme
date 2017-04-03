@@ -596,9 +596,9 @@
 
         .hidden_posts{display:none;}
     </style-->
-<style>
+<!--style>
     .hidden_posts{display:none;}
-</style>
+</style-->
 
 </head>
 <body class="not-mobile">
@@ -775,9 +775,9 @@
 
     <!-- Search Page -->
     {block:SearchPage}
-        <style scoped>
+        <!--style scoped>
             .hidden_posts{display:block;}
-        </style>
+        </style-->
         <div class="result">
             <p>
                 {lang:Found SearchResultCount results for SearchQuery 2}
@@ -795,9 +795,9 @@
 
     <!-- Tag Pages -->
     {block:TagPage}
-        <style scoped>
+        <!--style scoped>
             .hidden_posts{display:block;}
-        </style>
+        </style-->
         <div class="result">
             <p>
                 {lang:TagResultCount posts tagged Tag 3}
@@ -813,71 +813,74 @@
     <!-- HomePage -->
     {block:HomePage}
     {block:Posts}
-    <!-- Posts -->
-                {block:Photo}
-                    <section class="col-md-4 col-sm-6 col-12 tumblr_cell">
-                        <a class="tumblr_thumb" href="{Permalink}"
-                             style="background-image:url('{PhotoURL-500}');">
-                            {PhotoAlt}
-                        </a>
-                    </section>
-                {/block:Photo}
+    <!-- Post -->
+        {block:Photo}
+            <section class="col-md-4 col-sm-6 col-12 tumblr_cell">
+                <a class="tumblr_thumb" href="{Permalink}"
+                     style="background-image:url('{PhotoURL-500}');">
+                    {PhotoAlt}
+                </a>
+            </section>
+        {/block:Photo}
     {/block:Posts}
     {/block:HomePage}
 
     <!-- TagPage -->
     {block:TagPage}
     {block:Posts}
-    <!-- Posts -->
-                {block:Photo}
-                    <section class="col-md-4 col-sm-6 col-12 tumblr_cell">
-                        <a class="tumblr_thumb" href="{Permalink}"
-                             style="background-image:url('{PhotoURL-500}');">
-                            {PhotoAlt}
-                        </a>
-                    </section>
-                {/block:Photo}
+    <!-- Post -->
+        {block:Photo}
+            <section class="col-md-4 col-sm-6 col-12 tumblr_cell">
+                <a class="tumblr_thumb" href="{Permalink}"
+                     style="background-image:url('{PhotoURL-500}');">
+                    {PhotoAlt}
+                </a>
+            </section>
+        {/block:Photo}
 
 
-            {block:Photoset}
-                    <section class="col-md-4 col-sm-6 col-12 tumblr_cell tumblr_photoset">
-                        {block:ifshowfirstimageofphotoset}
-                        {block:photos}
-                            <a class="tumblr_thumb" href="{Permalink}"
-                                 style="background-image:url('{PhotoURL-500}');">
-                                {PhotoAlt}
-                            </a>
+        {block:Photoset}
+            <section class="col-md-4 col-sm-6 col-12 tumblr_cell tumblr_photoset">
+                {block:ifshowfirstimageofphotoset}
+                {block:photos}
+                    <a class="tumblr_thumb" href="{Permalink}"
+                         style="background-image:url('{PhotoURL-500}');">
+                        {PhotoAlt}
+                    </a>
 
-                        {/block:photos}
-                        {/block:ifshowfirstimageofphotoset}
+                {/block:photos}
+                {/block:ifshowfirstimageofphotoset}
 
-                        {block:ifnotshowfirstimageofphotoset}
-                        {Photoset}
-                        {/block:ifnotshowfirstimageofphotoset}
-                    </section>
-            {/block:Photoset}
+                {block:ifnotshowfirstimageofphotoset}
+                {Photoset}
+                {/block:ifnotshowfirstimageofphotoset}
+            </section>
+        {/block:Photoset}
     {/block:Posts}
     {/block:TagPage}
-
-    <!-- PermalinkPage -->
-    {block:PermalinkPage}
-    {block:Posts}
-    <!-- Posts -->
-                {block:Photo}
-                    {Photo}
-                {/block:Photo}
-
-
-            {block:Photoset}
-                    {Photoset}
-            {/block:Photoset}
-    {/block:Posts}
-    {/block:PermalinkPage}
 
 
 
     </div>
+
+    <!-- PermalinkPage -->
+    {block:PermalinkPage}
+    {block:Posts}
+    <!-- Post -->
+        <article>
+            {block:Photo}
+                {Photo}
+            {/block:Photo}
+
+
+            {block:Photoset}
+                {Photoset}
+            {/block:Photoset}
+        </article>
+    {/block:Posts}
+    {/block:PermalinkPage}
 </main>
+
 
             {block:Photo}
         <article class="post posts {select:Change Layout} {PostType} {TagsAsClasses}">

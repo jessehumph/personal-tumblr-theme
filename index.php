@@ -36,7 +36,7 @@
         .tumblr_photoset .tumblr_thumb:first-child{display:block;}
     </style>
 
-    <!--script type="text/javascript"
+    <-script type="text/javascript"
             src="http://static.tumblr.com/cvhjz4y/JWSn5a9bq/jquery.min.js"></script>
 
     <script src="http://static.tumblr.com/eeiisdz/kVmoh6wnz/all-js.js"></script>
@@ -60,42 +60,40 @@
 
     </script>
     {block:NoSearchResults}
-    <script
-        src="http://static.tumblr.com/dlyn8ge/p1Komimb1/nosearch.js"></script>
+    <!--script
+        src="http://static.tumblr.com/dlyn8ge/p1Komimb1/nosearch.js"></script-->
     {/block:NoSearchResults}
--->
 
     <script src="http://static.tumblr.com/dlyn8ge/VXbomilkw/lightbox.js">
     </script>
-    <!--script src="http://static.tumblr.com/dlyn8ge/blRomin4m/s-body.js"></script>
+    <script src="http://static.tumblr.com/dlyn8ge/blRomin4m/s-body.js"></script>
 
     <script src="http://static.tumblr.com/dlyn8ge/tNcomin24/s-header.js">
 
     </script>
 
-    <link rel="stylesheet" type="text/css"
+    <!--link rel="stylesheet" type="text/css"
           href="http://static.tumblr.com/dlyn8ge/m1nomkeuy/s-body.css"-->
     {text:custom javascript 1}
     {text:custom javascript 2}
 
     <!--[if IE 7]>
-    <!--script>
+    <script>
         var url = "http://browsehappy.com";
         $(location).attr('href', url);
-    </script-->
-    <!--[endif]-->
+    </script>
+    <[endif]-->
     <!--[if IE 8]>
-    <!--script>
+    <script>
         var url = "http://browsehappy.com";
         $(location).attr('href', url);
-    </script-->
-    <!--[endif]-->
+    </script>
+    <[endif]-->
 
 
     <!--/script-->
 
-    <!-- script type="javascript">
-        something;
+    <script type="javascript">
         WebFontConfig = {
             google: {families: ['Lato:400,300,700,100:latin', 'Open+Sans:400,300,700,100:latin', 'Nothing+You+Could+Do', 'Roboto:400,100,300,500,700:latin', 'Nunito:300,400,700:latin', 'Montserrat:100,200,300,400,700:latin', 'Arimo:400,700:latin']}
         };
@@ -107,7 +105,7 @@
             var s = document.getElementsByTagName('script')[0];
             s.parentNode.insertBefore(wf, s);
         })();
-    </script -->
+    </script>
 
     {block:Hidden}
     <!--
@@ -357,9 +355,9 @@
     {/block:Hidden}
 
 
-    <!--link rel="stylesheet"
+    <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
-          type="text/css" media="all"-->
+          type="text/css" media="all">
     <style type="text/css">
         /*Tumblr Global Appearance */
         body {

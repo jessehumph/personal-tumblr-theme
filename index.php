@@ -16,7 +16,24 @@
           href="{block:IndexPage}{BlogURL}{/block:IndexPage}{block:PermalinkPage}{Permalink}{/block:PermalinkPage}">
     <link rel="alternate" type="application/rss+xml" href="{RSS}">
 
-    <script type="text/javascript"
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+
+    <style>
+        .tumblr_header{text-align:center;padding-top:5rem;padding-bottom:5rem;}
+
+        .tumblr_grid{max-width:900px;}
+        .tumblr_row{}
+        .tumblr_cell{text-align:center;}
+        .tumblr_thumb{ width:100%;}
+    </style>
+
+    <!--script type="text/javascript"
             src="http://static.tumblr.com/cvhjz4y/JWSn5a9bq/jquery.min.js"></script>
 
     <script src="http://static.tumblr.com/eeiisdz/kVmoh6wnz/all-js.js"></script>
@@ -54,7 +71,7 @@
     </script>
 
     <link rel="stylesheet" type="text/css"
-          href="http://static.tumblr.com/dlyn8ge/m1nomkeuy/s-body.css">
+          href="http://static.tumblr.com/dlyn8ge/m1nomkeuy/s-body.css"-->
     {text:custom javascript 1}
     {text:custom javascript 2}
 
@@ -72,7 +89,7 @@
     <![endif]-->
 
 
-    </script>
+    <!--/script>
 
     <script type="javascript">
         something;
@@ -87,7 +104,7 @@
             var s = document.getElementsByTagName('script')[0];
             s.parentNode.insertBefore(wf, s);
         })();
-    </script>
+    </script-->
 
     {block:Hidden}
     <!--
@@ -337,9 +354,9 @@
     {/block:Hidden}
 
 
-    <link rel="stylesheet"
+    <!--link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
-          type="text/css" media="all">
+          type="text/css" media="all"-->
     <style type="text/css">
         /*Tumblr Global Appearance */
         body {
@@ -888,6 +905,18 @@
     {block:ShowHeaderImage}
         <img src="{HeaderImage}">
     {/block:ShowHeaderImage}
+
+<header role="banner" class="tumblr_header">
+    <img src="res/logo.jpg"/>
+    <nav class="container-fluid tumblr_grid">
+        <div class="row no-gutters tumblr_row">
+            <a class="col-md-4 col-sm-4 col-12 tumblr_cell">Visual</a>
+            <a class="col-md-4 col-sm-4 col-12 tumblr_cell">Technical</a>
+            <a class="col-md-4 col-sm-4 col-12 tumblr_cell">Experimental</a>
+        </div>
+    </nav>
+</header>
+
 
 <header role="banner" class="header salvia-header">
 

@@ -605,9 +605,9 @@
         <div class="row no-gutters tumblr_row">
 
             {block:ifOccupation1}
-                <a  {block:ifOccupationlink1}
+                <a  class="col-md-4 col-sm-4 col-12 tumblr_cell"
+                    {block:ifOccupationlink1}
                     onclick="window.location.href='{text:Occupation Link 1}'"
-                    style="cursor:pointer"
                     {/block:ifOccupationlink1}
                 >
                     {text:Occupation 1}
@@ -615,9 +615,9 @@
             {/block:ifOccupation1}
 
             {block:ifOccupation2}
-                <a  {block:ifOccupationlink2}
+                <a  class="col-md-4 col-sm-4 col-12 tumblr_cell"
+                    {block:ifOccupationlink2}
                     onclick="window.location.href='{text:Occupation Link 2}'"
-                    style="cursor:pointer"
                     {/block:ifOccupationlink2}
                 >
                     {text:Occupation 2}
@@ -625,17 +625,14 @@
             {/block:ifOccupation2}
 
             {block:ifOccupation3}
-                <a  {block:ifOccupationlink3}
+                <a  class="col-md-4 col-sm-4 col-12 tumblr_cell"
+                    {block:ifOccupationlink3}
                     onclick="window.location.href='{text:Occupation Link 3}'"
-                    style="cursor:pointer"
                     {/block:ifOccupationlink3}
                 >
                     {text:Occupation 3}
                 </a>
             {/block:ifOccupation3}
-            <a class="col-md-4 col-sm-4 col-12 tumblr_cell">Visual</a>
-            <a class="col-md-4 col-sm-4 col-12 tumblr_cell">Technical</a>
-            <a class="col-md-4 col-sm-4 col-12 tumblr_cell">Experimental</a>
         </div>
     </nav>
 </header>

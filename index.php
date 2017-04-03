@@ -193,16 +193,14 @@
     <meta name="select:Title Size" content="95pt" title="95pt">
     <meta name="select:Title Size" content="105pt" title="105pt">
 
-    <meta name="select:Header Filter Size" content="45pt" title="45pt">
-    <meta name="select:Header Filter Size" content="15pt" title="15pt">
-    <meta name="select:Header Filter Size" content="25pt" title="25pt">
-    <meta name="select:Header Filter Size" content="35pt" title="35pt">
-    <meta name="select:Header Filter Size" content="55pt" title="55pt">
-    <meta name="select:Header Filter Size" content="65pt" title="65pt">
-    <meta name="select:Header Filter Size" content="75pt" title="75pt">
-    <meta name="select:Header Filter Size" content="85pt" title="85pt">
-    <meta name="select:Header Filter Size" content="95pt" title="95pt">
-    <meta name="select:Header Filter Size" content="105pt" title="105pt">
+    <meta name="select:Header Filter Size" content="45pt" title="10pt">
+    <meta name="select:Header Filter Size" content="15pt" title="6pt">
+    <meta name="select:Header Filter Size" content="25pt" title="8pt">
+    <meta name="select:Header Filter Size" content="35pt" title="10pt">
+    <meta name="select:Header Filter Size" content="55pt" title="12pt">
+    <meta name="select:Header Filter Size" content="65pt" title="13pt">
+    <meta name="select:Header Filter Size" content="75pt" title="14pt">
+    <meta name="select:Header Filter Size" content="85pt" title="15pt">
 
 
     <meta name="font:Custom Page Title" content="Bookmania"/>

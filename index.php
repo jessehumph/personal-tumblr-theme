@@ -371,7 +371,7 @@
     </style>
 
 
-    <style>
+    <!--style>
         #ind .body-one-column-two-fourpx{width:calc(800px + {select:post padding}px * 4);margin:auto;max-width:100%;}
         #ind.not-mobile .two-fourpx .inner_container{width:400px}
         .this-is-tag#ind.not-mobile .two-fourpx .inner_container{width:400px !important;}
@@ -575,7 +575,7 @@
 
 
         .hidden_posts{display:none;}
-    </style>
+    </style-->
 
 
 </head>
@@ -881,7 +881,7 @@
 <div class="trigger-buttons">
     <a data-icon="&#xe022" original-icon="&#xe022" close-icon="&#xe023"
        class="menu-trigger"></a>
-    <a data-icon="&#xe021" class="search-trigger"></a>
+    <!--a data-icon="&#xe021" class="search-trigger"></a-->
 </div>
 
 

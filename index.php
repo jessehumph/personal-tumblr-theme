@@ -33,7 +33,7 @@
         .tumblr_thumb{ width:100%;}
     </style>
 
-    <script type="text/javascript"
+    <!--script type="text/javascript"
             src="http://static.tumblr.com/cvhjz4y/JWSn5a9bq/jquery.min.js"></script>
 
     <script src="http://static.tumblr.com/eeiisdz/kVmoh6wnz/all-js.js"></script>
@@ -71,7 +71,7 @@
     </script>
 
     <link rel="stylesheet" type="text/css"
-          href="http://static.tumblr.com/dlyn8ge/m1nomkeuy/s-body.css">
+          href="http://static.tumblr.com/dlyn8ge/m1nomkeuy/s-body.css"-->
     {text:custom javascript 1}
     {text:custom javascript 2}
 
@@ -354,9 +354,9 @@
     {/block:Hidden}
 
 
-    <link rel="stylesheet"
+    <!--link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
-          type="text/css" media="all">
+          type="text/css" media="all"-->
     <style type="text/css">
         /*Tumblr Global Appearance */
         body {
@@ -388,7 +388,7 @@
     </style>
 
 
-    <style>
+    <!--style>
         #ind .body-one-column-two-fourpx{width:calc(800px + {select:post padding}px * 4);margin:auto;max-width:100%;}
         #ind.not-mobile .two-fourpx .inner_container{width:400px}
         .this-is-tag#ind.not-mobile .two-fourpx .inner_container{width:400px !important;}
@@ -592,7 +592,7 @@
 
 
         .hidden_posts{display:none;}
-    </style>
+    </style-->
 
 
 </head>
@@ -910,6 +910,36 @@
     <img src="res/logo.jpg"/>
     <nav class="container-fluid tumblr_grid">
         <div class="row no-gutters tumblr_row">
+
+            {block:ifOccupation1}
+                <a  {block:ifOccupationlink1}
+                    onclick="window.location.href='{text:Occupation Link 1}'"
+                    style="cursor:pointer"
+                    {/block:ifOccupationlink1}
+                >
+                    {text:Occupation 1}
+                </a>
+            {/block:ifOccupation1}
+
+            {block:ifOccupation2}
+                <a  {block:ifOccupationlink2}
+                    onclick="window.location.href='{text:Occupation Link 2}'"
+                    style="cursor:pointer"
+                    {/block:ifOccupationlink2}
+                >
+                    {text:Occupation 2}
+                </a>
+            {/block:ifOccupation2}
+
+            {block:ifOccupation3}
+                <a  {block:ifOccupationlink3}
+                    onclick="window.location.href='{text:Occupation Link 3}'"
+                    style="cursor:pointer"
+                    {/block:ifOccupationlink3}
+                >
+                    {text:Occupation 3}
+                </a>
+            {/block:ifOccupation3}
             <a class="col-md-4 col-sm-4 col-12 tumblr_cell">Visual</a>
             <a class="col-md-4 col-sm-4 col-12 tumblr_cell">Technical</a>
             <a class="col-md-4 col-sm-4 col-12 tumblr_cell">Experimental</a>

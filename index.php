@@ -354,9 +354,9 @@
     {/block:Hidden}
 
 
-    <!--link rel="stylesheet"
+    <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
-          type="text/css" media="all"-->
+          type="text/css" media="all">
     <style type="text/css">
         /*Tumblr Global Appearance */
         body {
@@ -388,7 +388,7 @@
     </style>
 
 
-    <!--style>
+    <style>
         #ind .body-one-column-two-fourpx{width:calc(800px + {select:post padding}px * 4);margin:auto;max-width:100%;}
         #ind.not-mobile .two-fourpx .inner_container{width:400px}
         .this-is-tag#ind.not-mobile .two-fourpx .inner_container{width:400px !important;}
@@ -592,7 +592,7 @@
 
 
         .hidden_posts{display:none;}
-    </style-->
+    </style>
 
 
 </head>

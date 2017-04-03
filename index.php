@@ -600,7 +600,23 @@
 
 
 <header role="banner" class="tumblr_header">
-    <img src="res/logo.jpg"/>
+    <a href="/">
+
+        {block:ifnotlogoimage}
+            {block:ShowTitle}
+                <h1 id="logo">
+                    <a href="{BlogURL}">
+                        {Title}
+                    </a>
+                </h1>
+            {/block:ShowTitle}
+        {/block:ifnotlogoimage}
+
+        {block:iflogoimage}
+        <img src="{image:logo}">
+        {/block:iflogoimage}
+
+    </a>
     <nav class="container-fluid tumblr_grid">
         <div class="row no-gutters tumblr_row">
 

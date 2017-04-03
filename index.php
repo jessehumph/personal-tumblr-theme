@@ -918,7 +918,7 @@
 </header>
 
 
-<header role="banner" class="header salvia-header">
+<!--header role="banner" class="header salvia-header">
 
         <div class="salvia-title">
             <a href="/">
@@ -1020,7 +1020,7 @@
         <input role="button" type="submit" value="{lang:Search}">
     </form-->
 
-</header>
+<!--/header-->
 
 
 <!-- Lightbox -->

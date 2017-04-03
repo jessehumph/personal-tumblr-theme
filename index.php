@@ -885,6 +885,72 @@
     {/block:Posts}
     {/block:TagPage}
 
+    {block:PermalinkPage}
+    <!-- Posts -->
+    {block:Posts}
+                {block:Photo}
+                    <section class="col-md-4 col-sm-6 col-12 tumblr_cell">
+                        <a class="tumblr_thumb" href="{Permalink}"
+                             style="background-image:url('{PhotoURL-500}');">
+                            {PhotoAlt}
+                        </a>
+                    </section>
+                {/block:Photo}
+
+
+            {block:Photoset}
+                    <section class="col-md-4 col-sm-6 col-12 tumblr_cell tumblr_photoset">
+                        {block:ifshowfirstimageofphotoset}
+                        {block:photos}
+                            <a class="tumblr_thumb" href="{Permalink}"
+                                 style="background-image:url('{PhotoURL-500}');">
+                                {PhotoAlt}
+                            </a>
+
+                        {/block:photos}
+                        {/block:ifshowfirstimageofphotoset}
+
+                        {block:ifnotshowfirstimageofphotoset}
+                        {Photoset}
+                        {/block:ifnotshowfirstimageofphotoset}
+                    </section>
+            {/block:Photoset}
+    {/block:Posts}
+    {/block:PermalinkPage}
+
+    {block:IndexPage}
+    <!-- Posts -->
+    {block:Posts}
+                {block:Photo}
+                    <section class="col-md-4 col-sm-6 col-12 tumblr_cell">
+                        <a class="tumblr_thumb" href="{Permalink}"
+                             style="background-image:url('{PhotoURL-500}');">
+                            {PhotoAlt}
+                        </a>
+                    </section>
+                {/block:Photo}
+
+
+            {block:Photoset}
+                    <section class="col-md-4 col-sm-6 col-12 tumblr_cell tumblr_photoset">
+                        {block:ifshowfirstimageofphotoset}
+                        {block:photos}
+                            <a class="tumblr_thumb" href="{Permalink}"
+                                 style="background-image:url('{PhotoURL-500}');">
+                                {PhotoAlt}
+                            </a>
+
+                        {/block:photos}
+                        {/block:ifshowfirstimageofphotoset}
+
+                        {block:ifnotshowfirstimageofphotoset}
+                        {Photoset}
+                        {/block:ifnotshowfirstimageofphotoset}
+                    </section>
+            {/block:Photoset}
+    {/block:Posts}
+    {/block:IndexPage}
+
 
 
     </div>

@@ -33,7 +33,7 @@
         .tumblr_thumb{ width:100%;}
     </style>
 
-    <!--script type="text/javascript"
+    <script type="text/javascript"
             src="http://static.tumblr.com/cvhjz4y/JWSn5a9bq/jquery.min.js"></script>
 
     <script src="http://static.tumblr.com/eeiisdz/kVmoh6wnz/all-js.js"></script>
@@ -71,7 +71,7 @@
     </script>
 
     <link rel="stylesheet" type="text/css"
-          href="http://static.tumblr.com/dlyn8ge/m1nomkeuy/s-body.css"-->
+          href="http://static.tumblr.com/dlyn8ge/m1nomkeuy/s-body.css">
     {text:custom javascript 1}
     {text:custom javascript 2}
 
@@ -89,7 +89,7 @@
     <![endif]-->
 
 
-    <!--/script>
+    </script>
 
     <script type="javascript">
         something;
@@ -104,7 +104,7 @@
             var s = document.getElementsByTagName('script')[0];
             s.parentNode.insertBefore(wf, s);
         })();
-    </script-->
+    </script>
 
     {block:Hidden}
     <!--

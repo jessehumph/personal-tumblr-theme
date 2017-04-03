@@ -705,8 +705,8 @@
     </style>
 
     <style>
-        .header_filter {font-family:{font:Header Filter Font} color:{color:Header Filter Texts Color} border-bottom:1px solid {color:Header Filter Border Color}}
-        .header_filter:hover{cursor:pointer;color:{color:Header Filter Hover Texts Color} border-bottom:1px solid {color:Header Filter Hover Border Color}}
+        .header_filter a{font-size: {};font-family:{font:Header Filter Font} color:{color:Header Filter Texts Color} border-bottom:1px solid {color:Header Filter Border Color}}
+        .header_filter a:hover{cursor:pointer;color:{color:Header Filter Hover Texts Color} border-bottom:1px solid {color:Header Filter Hover Border Color}}
     </style>
 
 </head>
@@ -790,33 +790,27 @@
         <div class="row no-gutters tumblr_row">
 
             {block:ifHeaderFilter1}
-                <a  class="col-md-4 col-sm-4 col-12 tumblr_cell header_filter"
-                    {block:ifHeaderFilterLink1}
-                    onclick="window.location.href='{text:Header Filter Link 1}'"
-                    {/block:ifHeaderFilterLink1}
-                >
-                    {text:Header Filter 1}
-                </a>
+                <span  class="col-md-4 col-sm-4 col-12 tumblr_cell header_filter">
+                    <a {block:ifHeaderFilterLink1} onclick="window.location.href='{text:Header Filter Link 1}'" {/block:ifHeaderFilterLink1}>
+                        {text:Header Filter 1}
+                    </a>
+                </span>
             {/block:ifHeaderFilter1}
 
             {block:ifHeaderFilter2}
-                <a  class="col-md-4 col-sm-4 col-12 tumblr_cell header_filter"
-                    {block:ifHeaderFilterLink2}
-                    onclick="window.location.href='{text:Header Filter Link 2}'"
-                    {/block:ifHeaderFilterLink2}
-                >
-                    {text:Header Filter 2}
-                </a>
+                <span  class="col-md-4 col-sm-4 col-12 tumblr_cell header_filter">
+                    <a {block:ifHeaderFilterLink2} onclick="window.location.href='{text:Header Filter Link 2}'" {/block:ifHeaderFilterLink2}>
+                        {text:Header Filter 2}
+                    </a>
+                </span>
             {/block:ifHeaderFilter2}
 
             {block:ifHeaderFilter3}
-                <a  class="col-md-4 col-sm-4 col-12 tumblr_cell header_filter"
-                    {block:ifHeaderFilterLink3}
-                    onclick="window.location.href='{text:Header Filter Link 3}'"
-                    {/block:ifHeaderFilterLink3}
-                >
-                    {text:Header Filter 3}
-                </a>
+                <span  class="col-md-4 col-sm-4 col-12 tumblr_cell header_filter">
+                    <a {block:ifHeaderFilterLink3} onclick="window.location.href='{text:Header Filter Link 3}'" {/block:ifHeaderFilterLink3}>
+                        {text:Header Filter 3}
+                    </a>
+                </span>
             {/block:ifHeaderFilter3}
         </div>
     </nav>

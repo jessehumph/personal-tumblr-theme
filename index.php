@@ -76,22 +76,22 @@
     {text:custom javascript 2}
 
     <!--[if IE 7]>
-    <script>
+    <!--script>
         var url = "http://browsehappy.com";
         $(location).attr('href', url);
-    </script>
+    </script-->
     <![endif]-->
     <!--[if IE 8]>
-    <script>
+    <!--script>
         var url = "http://browsehappy.com";
         $(location).attr('href', url);
-    </script>
+    </script-->
     <![endif]-->
 
 
-    </script>
+    <!--/script-->
 
-    <!--script type="javascript">
+    <!-- script type="javascript">
         something;
         WebFontConfig = {
             google: {families: ['Lato:400,300,700,100:latin', 'Open+Sans:400,300,700,100:latin', 'Nothing+You+Could+Do', 'Roboto:400,100,300,500,700:latin', 'Nunito:300,400,700:latin', 'Montserrat:100,200,300,400,700:latin', 'Arimo:400,700:latin']}
@@ -104,7 +104,7 @@
             var s = document.getElementsByTagName('script')[0];
             s.parentNode.insertBefore(wf, s);
         })();
-    </script-->
+    </script -->
 
     {block:Hidden}
     <!--

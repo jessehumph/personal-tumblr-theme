@@ -31,7 +31,7 @@
         .tumblr_grid{max-width:900px;}
         .tumblr_row{}
         .tumblr_cell{text-align:center;}
-        .tumblr_thumb{height:0; width: 100%; padding-bottom: 100%; background-size: cover; background-position: 50%;}
+        .tumblr_thumb{display:block; height:0; width: 100%; padding-bottom: 100%; background-size: cover; background-position: 50%;}
         .tumblr_photoset .tumblr_thumb{display:none;}
         .tumblr_photoset .tumblr_thumb:first-child{display:block;}
     </style>

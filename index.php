@@ -61,11 +61,11 @@
     <script
         src="http://static.tumblr.com/dlyn8ge/p1Komimb1/nosearch.js"></script>
     {/block:NoSearchResults}
-
+-->
 
     <script src="http://static.tumblr.com/dlyn8ge/VXbomilkw/lightbox.js">
     </script>
-    <script src="http://static.tumblr.com/dlyn8ge/blRomin4m/s-body.js"></script>
+    <!--script src="http://static.tumblr.com/dlyn8ge/blRomin4m/s-body.js"></script>
 
     <script src="http://static.tumblr.com/dlyn8ge/tNcomin24/s-header.js">
 

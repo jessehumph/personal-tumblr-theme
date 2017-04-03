@@ -31,7 +31,9 @@
         .tumblr_grid{max-width:900px;}
         .tumblr_row{}
         .tumblr_cell{text-align:center;}
-        .tumblr_thumb{width: 100%; height: 100%; background-size: cover; background-position: 50%;}
+        .tumblr_thumb{height:0; width: 100%; padding-bottom: 100%; background-size: cover; background-position: 50%;}
+        .tumblr_photoset .tumblr_thumb{display:none;}
+        .tumblr_photoset .tumblr_thumb:first-child{display:block;}
     </style>
 
     <!--script type="text/javascript"
@@ -850,7 +852,7 @@
 
             {block:Photoset}
                 {block:indexpage}
-                    <section class="col-md-4 col-sm-6 col-12 tumblr_cell">
+                    <section class="col-md-4 col-sm-6 col-12 tumblr_cell tumblr_photoset">
                         {block:ifshowfirstimageofphotoset}
                         {block:photos}
                             <div class="tumblr_thumb"

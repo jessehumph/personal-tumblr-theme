@@ -36,7 +36,7 @@
         .tumblr_photoset .tumblr_thumb:first-child{display:block;}
     </style>
 
-    <-script type="text/javascript"
+    <script type="text/javascript"
             src="http://static.tumblr.com/cvhjz4y/JWSn5a9bq/jquery.min.js"></script>
 
     <script src="http://static.tumblr.com/eeiisdz/kVmoh6wnz/all-js.js"></script>

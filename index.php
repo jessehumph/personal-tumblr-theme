@@ -846,11 +846,19 @@
 
 
             {block:Photoset}
+                {block:indexpage}
+                {block:ifshowfirstimageofphotoset}
                 {block:photos}
                     <section class="col-md-4 col-sm-6 col-12 tumblr_cell">
                         <img class="tumblr_thumb" src="{PhotoURL-75sq}" alt="{PhotoAlt}"/>
                     </section>
                 {/block:photos}
+                {/block:ifshowfirstimageofphotoset}
+
+                {block:ifnotshowfirstimageofphotoset}
+                {Photoset}
+                {/block:ifnotshowfirstimageofphotoset}
+                {/block:indexpage}
             {/block:Photoset}
     {/block:Posts}
 

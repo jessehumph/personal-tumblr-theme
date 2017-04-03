@@ -867,16 +867,53 @@
     {block:PermalinkPage}
     {block:Posts}
     <!-- Post -->
-        <article>
             {block:Photo}
-                {Photo}
+                <article class="post posts {select:Change Layout} {PostType} {TagsAsClasses}">
+
+                        <figure
+                            class="{block:HighRes}high-res{/block:HighRes}{block:Caption} with-caption{/block:Caption}"
+                            data-photo-width="{PhotoWidth-HighRes}">
+
+                            {LinkOpenTag}
+                                <img src="{PhotoURL-HighRes}" alt="{PhotoAlt}"
+                                      width="{PhotoWidth-HighRes}"
+                                      height="{PhotoHeight-HighRes}" />
+                            {LinkCloseTag}
+
+                            {block:Caption}
+                                <figcaption class="caption">
+                                    {Caption}
+                                </figcaption>
+                            {/block:Caption}
+
+                        </figure>
+
+
+                        {LikeButton color="grey"}
+
+
+                        {ReblogButton color="grey"}
+
+
+                        {block:IndexPage}
+
+                            <p>
+                                <a href="{Permalink}" class="permalink">
+                                    {lang:Permalink}
+                                </a>
+                            </p>
+
+                        {/block:IndexPage}
+
+                </article>
             {/block:Photo}
 
 
             {block:Photoset}
-                {Photoset}
+                <article class="post posts {select:Change Layout} {PostType} {TagsAsClasses}">
+                        {Photoset}
+                </article>
             {/block:Photoset}
-        </article>
     {/block:Posts}
     {/block:PermalinkPage}
 </main>

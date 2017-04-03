@@ -838,16 +838,17 @@
 
 
 
+    {block:HomePage}
     <!-- Posts -->
     {block:Posts}
-            {block:Photo}
-                <section class="col-md-4 col-sm-6 col-12 tumblr_cell">
-                    <a class="tumblr_thumb" href="test"
-                         style="background-image:url('{PhotoURL-500}');">
-                        {PhotoAlt}
-                    </a>
-                </section>
-            {/block:Photo}
+                {block:Photo}
+                    <section class="col-md-4 col-sm-6 col-12 tumblr_cell">
+                        <a class="tumblr_thumb" href="test"
+                             style="background-image:url('{PhotoURL-500}');">
+                            {PhotoAlt}
+                        </a>
+                    </section>
+                {/block:Photo}
 
 
             {block:Photoset}
@@ -870,6 +871,7 @@
                 {/block:indexpage}
             {/block:Photoset}
     {/block:Posts}
+    {/block:HomePage}
 
 
 

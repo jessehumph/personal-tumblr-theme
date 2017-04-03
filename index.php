@@ -838,9 +838,10 @@
 
 
 
+    <!-- HomePage -->
     {block:HomePage}
-    <!-- Posts -->
     {block:Posts}
+    <!-- Posts -->
                 {block:Photo}
                     <section class="col-md-4 col-sm-6 col-12 tumblr_cell">
                         <a class="tumblr_thumb" href="{Permalink}"
@@ -852,9 +853,10 @@
     {/block:Posts}
     {/block:HomePage}
 
+    <!-- TagPage -->
     {block:TagPage}
-    <!-- Posts -->
     {block:Posts}
+    <!-- Posts -->
                 {block:Photo}
                     <section class="col-md-4 col-sm-6 col-12 tumblr_cell">
                         <a class="tumblr_thumb" href="{Permalink}"
@@ -885,9 +887,10 @@
     {/block:Posts}
     {/block:TagPage}
 
+    <!-- PermalinkPage -->
     {block:PermalinkPage}
-    <!-- Posts -->
     {block:Posts}
+    <!-- Posts -->
                 {block:Photo}
                     <section class="col-md-4 col-sm-6 col-12 tumblr_cell">
                         <a class="tumblr_thumb" href="{Permalink}"
@@ -918,9 +921,10 @@
     {/block:Posts}
     {/block:PermalinkPage}
 
+    <!-- IndexPage -->
     {block:IndexPage}
-    <!-- Posts -->
     {block:Posts}
+    <!-- Posts -->
                 {block:Photo}
                     <section class="col-md-4 col-sm-6 col-12 tumblr_cell">
                         <a class="tumblr_thumb" href="{Permalink}"

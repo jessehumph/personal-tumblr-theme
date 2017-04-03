@@ -838,18 +838,20 @@
 
     <!-- Posts -->
     {block:Posts}
-        <section class="col-md-4 col-sm-6 col-12 tumblr_cell">
             {block:Photo}
-                <img class="tumblr_thumb" src="{PhotoURL-75sq}" alt="{PhotoAlt}"/>
+                <section class="col-md-4 col-sm-6 col-12 tumblr_cell">
+                    <img class="tumblr_thumb" src="{PhotoURL-75sq}" alt="{PhotoAlt}"/>
+                </section>
             {/block:Photo}
 
 
             {block:Photoset}
                 {block:photos}
-                    <img class="tumblr_thumb" src="{PhotoURL-75sq}" alt="{PhotoAlt}"/>
+                    <section class="col-md-4 col-sm-6 col-12 tumblr_cell">
+                        <img class="tumblr_thumb" src="{PhotoURL-75sq}" alt="{PhotoAlt}"/>
+                    </section>
                 {/block:photos}
             {/block:Photoset}
-        </section>
     {/block:Posts}
 
 

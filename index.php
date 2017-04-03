@@ -31,7 +31,7 @@
         .tumblr_grid{max-width:900px;}
         .tumblr_row{}
         .tumblr_cell{text-align:center;}
-        .tumblr_thumb{ width:100%;}
+        .tumblr_thumb{width: 100%; height: 100%; background-size: cover; background-position: 50%;}
     </style>
 
     <!--script type="text/javascript"
@@ -840,24 +840,31 @@
     {block:Posts}
             {block:Photo}
                 <section class="col-md-4 col-sm-6 col-12 tumblr_cell">
-                    <img class="tumblr_thumb" src="{PhotoURL-75sq}" alt="{PhotoAlt}"/>
+                    <div class="tumblr_thumb"
+                         style="background-image:url('{PhotoURL-500}');">
+                        {PhotoAlt}
+                    </div>
                 </section>
             {/block:Photo}
 
 
             {block:Photoset}
                 {block:indexpage}
-                {block:ifshowfirstimageofphotoset}
-                {block:photos}
                     <section class="col-md-4 col-sm-6 col-12 tumblr_cell">
-                        <img class="tumblr_thumb" src="{PhotoURL-500sq}" alt="{PhotoAlt}"/>
-                    </section>
-                {/block:photos}
-                {/block:ifshowfirstimageofphotoset}
+                        {block:ifshowfirstimageofphotoset}
+                        {block:photos}
+                            <div class="tumblr_thumb"
+                                 style="background-image:url('{PhotoURL-500}');">
+                                {PhotoAlt}
+                            </div>
 
-                {block:ifnotshowfirstimageofphotoset}
-                {Photoset}
-                {/block:ifnotshowfirstimageofphotoset}
+                        {/block:photos}
+                        {/block:ifshowfirstimageofphotoset}
+
+                        {block:ifnotshowfirstimageofphotoset}
+                        {Photoset}
+                        {/block:ifnotshowfirstimageofphotoset}
+                    </section>
                 {/block:indexpage}
             {/block:Photoset}
     {/block:Posts}

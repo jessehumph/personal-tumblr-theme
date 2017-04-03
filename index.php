@@ -928,7 +928,7 @@
 
 
 <div class="scrolling"></div>
-<main id="content-per" role="main" class="content body-one-column-{select:Change Layout}">
+<div id="content-per">
 
 
 
@@ -965,7 +965,7 @@
         </div>
     {/block:TagPage}
 
-<main class="container-fluid tumblr_grid">
+<main role="main" class="container-fluid tumblr_grid">
     <div class="row no-gutters tumblr_row">
 
 
@@ -1565,7 +1565,7 @@
 
     {/block:PermalinkPagination}
 
-</main>
+</div>
 
 <footer class="footer copyrighting">
     <p>

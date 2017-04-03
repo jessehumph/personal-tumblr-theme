@@ -72,8 +72,8 @@
 
     </script>
 
-    <!--link rel="stylesheet" type="text/css"
-          href="http://static.tumblr.com/dlyn8ge/m1nomkeuy/s-body.css"-->
+    <link rel="stylesheet" type="text/css"
+          href="http://static.tumblr.com/dlyn8ge/m1nomkeuy/s-body.css">
     {text:custom javascript 1}
     {text:custom javascript 2}
 

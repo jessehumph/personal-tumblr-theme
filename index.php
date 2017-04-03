@@ -763,7 +763,7 @@
 <div class="trigger-buttons">
     <a data-icon="&#xe022" original-icon="&#xe022" close-icon="&#xe023"
        class="menu-trigger"></a>
-    <a data-icon="&#xe021" class="search-trigger"></a>
+    <!--a data-icon="&#xe021" class="search-trigger"></a-->
 </div>
 
 <header role="banner" class="tumblr_header">

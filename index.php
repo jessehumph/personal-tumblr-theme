@@ -841,8 +841,11 @@
         <section class="col-md-4 col-sm-6 col-12 tumblr_cell">
             <img class="tumblr_thumb" src="res/post01.jpg"/>
         </section>
-    </div>
     {/block:Posts}
+
+
+        
+    </div>
 </main>
 
             {block:Photo}

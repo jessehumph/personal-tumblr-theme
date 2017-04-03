@@ -127,12 +127,12 @@
     <meta name="if:Hide Permalink Text Info" content=""/>
     <meta name="if:Disable Image Lightbox" content=""/>
 
-    <meta name="if:Disable Occupation Border" content=""/>
+    <meta name="if:Disable Filter Border" content=""/>
     <meta name="if:Capitalize Title" content=""/>
     <meta name="if:Bold Title" content=""/>
     <meta name="if:Italic Title" content=""/>
-    <meta name="if:Bold Occupation Text" content=""/>
-    <meta name="if:Italic Occupation Text" content=""/>
+    <meta name="if:Bold Filter Text" content=""/>
+    <meta name="if:Italic Filter Text" content=""/>
     <meta name="if:Disable Search Button" content=""/>
     <meta name="if:Italic Hidden Menu Links" content=""/>
 
@@ -152,10 +152,10 @@
 
     <meta name="color:Header Title Color" content="#222222"/>
     <meta name="color:Header Desscription Color" content="#222222"/>
-    <meta name="color:Header Occupation Texts Color" content="#222222"/>
-    <meta name="color:Header Occupation Border Color" content="#efefef"/>
-    <meta name="color:Header Occupation Hover Texts Color" content="#222222"/>
-    <meta name="color:Header Occupation Hover Border Color" content="#efefef"/>
+    <meta name="color:Header Filter Texts Color" content="#222222"/>
+    <meta name="color:Header Filter Border Color" content="#efefef"/>
+    <meta name="color:Header Filter Hover Texts Color" content="#222222"/>
+    <meta name="color:Header Filter Hover Border Color" content="#efefef"/>
     <meta name="color:Header Search Menu Icon Color" content="#222222"/>
     <meta name="color:Header Search Menu Background Color" content="#ffffff"/>
     <meta name="color:Header Search Menu Border Color" content="#efefef"/>
@@ -202,7 +202,7 @@
 
     <meta name="font:Header Title Font" content="Noto Serif"/>
     <meta name="font:Header Description Font" content="Baskervile"/>
-    <meta name="font:Header Occupation Font" content="Baskervile"/>
+    <meta name="font:Header Filter Font" content="Baskervile"/>
     <meta name="font:Hidden Menu Link Font" content="Baskervile"/>
 
     <meta name="select:Post Height" content="auto" title="normal">
@@ -344,14 +344,14 @@
     <meta name="text:Custom link 8 title" content=""/>
 
 
-    <meta name="text:Occupation 1" content="Blogger"/>
-    <meta name="text:Occupation 2" content="Photographer"/>
-    <meta name="text:Occupation 3" content="Artist"/>
+    <meta name="text:Header Filter 1" content="Blogger"/>
+    <meta name="text:Header Filter 2" content="Photographer"/>
+    <meta name="text:Header Filter 3" content="Artist"/>
 
 
-    <meta name="text:Occupation Link 1" content=""/>
-    <meta name="text:Occupation Link 2" content=""/>
-    <meta name="text:Occupation Link 3" content=""/>
+    <meta name="text:Header Filter Link 1" content=""/>
+    <meta name="text:Header Filter Link 2" content=""/>
+    <meta name="text:Header Filter Link 3" content=""/>
     {/block:Hidden}
 
 
@@ -666,15 +666,10 @@
         #per.this-is-page .post.text h3{color:{color:Custom Page Title};font-family:{font:custom page title};}
         .salvia-title{font-family:{font:Header Title Font}}
         .salvia-description{font-family:{font:Header Description Font}}
-        .salvia-occupations a{font-family:{font:Header Occupation Font}}
         .hidden-menu-link a{font-family:{font:Hidden Menu Link Font}}
         header {height:auto !important;}
         .header-title a{color:{color:Header Title Color}}
         .header-description,.header-description a{color:{color:Header Desscription Color}}
-        .salvia-occupations a{color:{color:Header Occupation Texts Color}}
-        .salvia-occupations a{border-bottom:1px solid {color:Header Occupation Border Color}}
-        .salvia-occupations a:hover{color:{color:Header Occupation Hover Texts Color}}
-        .salvia-occupations a:hover{border-bottom:1px solid {color:Header Occupation Hover Border Color}}
         .trigger-buttons{color:{color:Header Search Menu Icon Color};}
         .trigger-buttons a{border:1px solid {color:Header Search Menu Border Color};}
         .hidden-menu{background-color:{color:Hidden Menu Bacakground Color};border-right:1px solid {color:Header Occupation Border Color};}
@@ -707,6 +702,14 @@
         .paginate-it-container{background-color:transparent}
         html{border-left:0px;}
         .paginate-it-container a{color:{color:Pagination Navigator Color}}
+    </style>
+
+    <style>
+        .header-filter a{font-family:{font:Header Filter Font}}
+        .header-filter a{color:{color:Header Filter Texts Color}}
+        .header-filter a{border-bottom:1px solid {color:Header Filter Border Color}}
+        .header-filter a:hover{color:{color:Header Filter Hover Texts Color}}
+        .header-filter a:hover{border-bottom:1px solid {color:Header Filter Hover Border Color}}
     </style>
 
 </head>
@@ -785,35 +788,35 @@
     <nav class="container-fluid tumblr_grid">
         <div class="row no-gutters tumblr_row">
 
-            {block:ifOccupation1}
-                <a  class="col-md-4 col-sm-4 col-12 tumblr_cell"
-                    {block:ifOccupationlink1}
-                    onclick="window.location.href='{text:Occupation Link 1}'"
-                    {/block:ifOccupationlink1}
+            {block:ifHeaderFilter1}
+                <a  class="col-md-4 col-sm-4 col-12 tumblr_cell header_filter"
+                    {block:ifHeaderFilterLink1}
+                    onclick="window.location.href='{text:Header Filter Link 1}'"
+                    {/block:ifHeaderFilterLink1}
                 >
-                    {text:Occupation 1}
+                    {text:Header Filter 1}
                 </a>
-            {/block:ifOccupation1}
+            {/block:ifHeaderFilter1}
 
-            {block:ifOccupation2}
-                <a  class="col-md-4 col-sm-4 col-12 tumblr_cell"
-                    {block:ifOccupationlink2}
-                    onclick="window.location.href='{text:Occupation Link 2}'"
-                    {/block:ifOccupationlink2}
+            {block:ifHeaderFilter2}
+                <a  class="col-md-4 col-sm-4 col-12 tumblr_cell header_filter"
+                    {block:ifHeaderFilterLink2}
+                    onclick="window.location.href='{text:Header Filter Link 2}'"
+                    {/block:ifHeaderFilterLink2}
                 >
-                    {text:Occupation 2}
+                    {text:Header Filter 2}
                 </a>
-            {/block:ifOccupation2}
+            {/block:ifHeaderFilter2}
 
-            {block:ifOccupation3}
-                <a  class="col-md-4 col-sm-4 col-12 tumblr_cell"
-                    {block:ifOccupationlink3}
-                    onclick="window.location.href='{text:Occupation Link 3}'"
-                    {/block:ifOccupationlink3}
+            {block:ifHeaderFilter3}
+                <a  class="col-md-4 col-sm-4 col-12 tumblr_cell header_filter"
+                    {block:ifHeaderFilterLink3}
+                    onclick="window.location.href='{text:Header Filter Link 3}'"
+                    {/block:ifHeaderFilterLink3}
                 >
-                    {text:Occupation 3}
+                    {text:Header Filter 3}
                 </a>
-            {/block:ifOccupation3}
+            {/block:ifHeaderFilter3}
         </div>
     </nav>
 </header>

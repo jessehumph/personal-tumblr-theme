@@ -833,31 +833,17 @@
 
 <main class="container-fluid tumblr_grid">
     <div class="row no-gutters tumblr_row">
-        <section class="col-md-4 col-sm-6 col-12 tumblr_cell">
-            <img class="tumblr_thumb" src="res/post01.jpg"/>
-        </section>
-        <section class="col-md-4 col-sm-6 col-12 tumblr_cell">
-            <img class="tumblr_thumb" src="res/post02.png"/>
-        </section>
-        <section class="col-md-4 col-sm-6 col-12 tumblr_cell">
-            <img class="tumblr_thumb" src="res/post03.png"/>
-        </section>
-        <section class="col-md-4 col-sm-6 col-12 tumblr_cell">
-            <img class="tumblr_thumb" src="res/post04.jpg"/>
-        </section>
-        <section class="col-md-4 col-sm-6 col-12 tumblr_cell">
-            <img class="tumblr_thumb" src="res/post05.png"/>
-        </section>
-        <section class="col-md-4 col-sm-6 col-12 tumblr_cell">
-            <img class="tumblr_thumb" src="res/post06.jpg"/>
-        </section>
-    </div>
-</main>
 
 
 
     <!-- Posts -->
     {block:Posts}
+        <section class="col-md-4 col-sm-6 col-12 tumblr_cell">
+            <img class="tumblr_thumb" src="res/post01.jpg"/>
+        </section>
+    </div>
+    {/block:Posts}
+</main>
 
             {block:Photo}
         <article class="post posts {select:Change Layout} {PostType} {TagsAsClasses}">

@@ -193,6 +193,17 @@
     <meta name="select:Title Size" content="95pt" title="95pt">
     <meta name="select:Title Size" content="105pt" title="105pt">
 
+    <meta name="select:Header Filter Size" content="45pt" title="45pt">
+    <meta name="select:Header Filter Size" content="15pt" title="15pt">
+    <meta name="select:Header Filter Size" content="25pt" title="25pt">
+    <meta name="select:Header Filter Size" content="35pt" title="35pt">
+    <meta name="select:Header Filter Size" content="55pt" title="55pt">
+    <meta name="select:Header Filter Size" content="65pt" title="65pt">
+    <meta name="select:Header Filter Size" content="75pt" title="75pt">
+    <meta name="select:Header Filter Size" content="85pt" title="85pt">
+    <meta name="select:Header Filter Size" content="95pt" title="95pt">
+    <meta name="select:Header Filter Size" content="105pt" title="105pt">
+
 
     <meta name="font:Custom Page Title" content="Bookmania"/>
     <meta name="font:Custom Page Content" content="Arial"/>
@@ -705,8 +716,17 @@
     </style>
 
     <style>
-        .header_filter a{font-size: {};font-family:{font:Header Filter Font} color:{color:Header Filter Texts Color} border-bottom:1px solid {color:Header Filter Border Color}}
-        .header_filter a:hover{cursor:pointer;color:{color:Header Filter Hover Texts Color} border-bottom:1px solid {color:Header Filter Hover Border Color}}
+        .header_filter a{
+            font-size: {select:Header Filter Size};
+            font-family:{font:Header Filter Font};
+            color:{color:Header Filter Texts Color};
+            border-bottom:1px solid {color:Header Filter Border Color};
+        }
+        .header_filter a:hover{
+            cursor:pointer;
+            color:{color:Header Filter Hover Texts Color};
+            border-bottom:1px solid {color:Header Filter Hover Border Color};
+        }
     </style>
 
 </head>

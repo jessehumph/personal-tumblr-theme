@@ -714,6 +714,57 @@
 </head>
 <body class="not-mobile">
 
+<div class="hidden-menu">
+    <div class="hidden-menu-close">X</div>
+    <div class="hidden-menu-right-image"></div>
+    <div class="hidden-menu-content">
+        <div class="hidden-menu-link">
+
+            <div style="margin-bottom:15px;">
+                {block:HasPages}
+                {block:Pages}
+                    <span>
+                        <a href="{URL}" {target}>
+                            {Label}
+                        </a>
+                    </span>
+                {/block:Pages}
+                {/block:HasPages}
+
+                {block:SubmissionsEnabled}
+                    <span>
+                        <a href="/submit" {target}>{SubmitLabel}</a>
+                    </span>
+                {/block:SubmissionsEnabled}
+            </div>
+
+
+            {block:AskEnabled}
+                <span>
+                    <a class='ask-trigger'>
+                        {AskLabel}
+                    </a>
+                </span>
+            {/block:AskEnabled}
+
+            {block:SubmissionsEnabled}
+                <span>
+                    <a class='submit-trigger'>
+                        {SubmitLabel}
+                    </a>
+                </span>
+            {block:SubmissionsEnabled}
+
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="trigger-buttons">
+    <a data-icon="&#xe022" original-icon="&#xe022" close-icon="&#xe023"
+       class="menu-trigger"></a>
+    <a data-icon="&#xe021" class="search-trigger"></a>
+</div>
 
 <header role="banner" class="tumblr_header">
     <a href="/">

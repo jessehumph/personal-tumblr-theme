@@ -901,11 +901,6 @@
     <a data-icon="&#xe021" class="search-trigger"></a>
 </div-->
 
-
-    {block:ShowHeaderImage}
-        <img src="{HeaderImage}">
-    {/block:ShowHeaderImage}
-
 <header role="banner" class="tumblr_header">
     <img src="res/logo.jpg"/>
     <nav class="container-fluid tumblr_grid">

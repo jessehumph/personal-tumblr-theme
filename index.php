@@ -594,7 +594,9 @@
 
         .hidden_posts{display:none;}
     </style-->
-
+<style>
+    .hidden_posts{display:none;}
+</style>
 
 </head>
 <body class="not-mobile">
@@ -614,7 +616,7 @@
         {/block:ifnotlogoimage}
 
         {block:iflogoimage}
-        <img src="{image:logo}">
+        <img class="tumblr_logo" src="{image:logo}">
         {/block:iflogoimage}
 
     </a>
@@ -816,6 +818,9 @@
 
     <!-- Tag Pages -->
     {block:TagPage}
+        <style scoped>
+            .hidden_posts{display:block;}
+        </style>
         <div class="result">
             <p>
                 {lang:TagResultCount posts tagged Tag 3}

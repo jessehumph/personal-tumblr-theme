@@ -26,6 +26,7 @@
 
     <style>
         .tumblr_header{text-align:center;padding-top:5rem;padding-bottom:5rem;}
+        .tumblr_logo{max-width:100px;}
 
         .tumblr_grid{max-width:900px;}
         .tumblr_row{}
@@ -80,13 +81,13 @@
         var url = "http://browsehappy.com";
         $(location).attr('href', url);
     </script-->
-    <![endif]-->
+    <!--[endif]-->
     <!--[if IE 8]>
     <!--script>
         var url = "http://browsehappy.com";
         $(location).attr('href', url);
     </script-->
-    <![endif]-->
+    <!--[endif]-->
 
 
     <!--/script-->

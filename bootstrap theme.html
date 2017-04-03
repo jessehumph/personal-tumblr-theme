@@ -58,3 +58,312 @@
 </footer>
 </body>
 </html>
+
+
+
+<!--div class="hidden-menu">
+    <div class="hidden-menu-close">X</div>
+    <div class="hidden-menu-right-image"></div>
+    <div class="hidden-menu-content">
+        <div class="hidden-menu-link">
+
+            <div style="margin-bottom:15px;">
+
+
+                {block:ifCustomlink1title}
+                    <span>
+                      <a href="{text:Custom link 1 URL}" {target}>
+                          {text:Custom link 1 title}
+                      </a>
+                    </span>
+                {/block:ifCustomlink1title}
+                {block:ifCustomlink2title}
+                    <span>
+                      <a href="{text:Custom link 2 URL}" {target}>
+                          {text:Custom link 2 title}
+                      </a>
+                    </span>
+                {/block:ifCustomlink2title}{block:ifCustomlink3title}
+                    <span>
+                      <a href="{text:Custom link 3 URL}" {target}>
+                          {text:Custom link 3 title}
+                      </a>
+                    </span>
+                {/block:ifCustomlink3title}{block:ifCustomlink4title}
+    <span>
+      <a href="{text:Custom link 4 URL}" {target}>
+          {text:Custom link 4 title}
+      </a>
+    </span>
+                {/block:ifCustomlink4title}
+
+                {block:ifCustomlink5title}
+    <span>
+      <a href="{text:Custom link 5 URL}" {target}>
+          {text:Custom link 5 title}
+      </a>
+    </span>
+                {/block:ifCustomlink5title}
+
+                {block:ifCustomlink6title}
+    <span>
+      <a href="{text:Custom link 6 URL}" {target}>
+          {text:Custom link 6 title}
+      </a>
+    </span>
+                {/block:ifCustomlink6title}
+
+                {block:ifCustomlink7title}
+    <span>
+      <a href="{text:Custom link 7 URL}" {target}>
+          {text:Custom link 7 title}
+      </a>
+    </span>
+                {/block:ifCustomlink7title}
+
+                {block:ifCustomlink8title}
+    <span>
+      <a href="{text:Custom link 8 URL}" {target}>
+          {text:Custom link 8 title}
+      </a>
+    </span>
+                {/block:ifCustomlink8title}
+                {block:HasPages}
+                {block:Pages}
+                                <span>
+                                <a href="{URL}" {target}>
+                                    {Label}
+                                </a>
+                                </span>
+                {/block:Pages} {/block:HasPages}
+
+                {block:SubmissionsEnabled}
+                                            <span>
+                                                <a href="/submit" {target}>{SubmitLabel}</a>
+                                            </span>
+                {/block:SubmissionsEnabled}
+            </div>
+            {block:ifpersonalsiteurl}
+  <span>
+<a href="{text:personal site url}" {target}>
+    Website
+</a></span>
+            {/block:ifpersonalsiteurl}
+            {block:iffacebookurl}
+  <span>
+                     <a href="{text:facebook url}" {target}>
+                         Facebook
+                     </a> </span>
+            {/block:iffacebookurl}
+            {block:iftwitterurl}
+  <span>
+                     <a href="{text:twitter url}" {target}
+                        class="twitter-click">
+                         Twitter
+                     </a></span>
+            {/block:iftwitterurl}
+            {block:ifpinteresturl}
+  <span>
+                     <a href="{text:pinterest url}" {target}
+                        class="pinterest-click">
+                         Pinterest
+                     </a></span>
+            {/block:ifpinteresturl}
+            {block:ifinstagramUsername}
+  <span>
+                     <a href="http://instagram.com/{text:instagram Username}"
+                        {target} class="instagram-click"> Instagram
+                     </a></span>
+            {/block:ifinstagramUsername}
+            {block:ifshopurl}
+  <span>
+                     <a href="{text:shop url}" {target}>
+                         Shop
+                     </a></span>
+            {/block:ifshopurl}
+            {block:ifsoundcloudurl}
+  <span>
+                     <a href="{text:soundcloud url}" {target}>
+                         SoundCloud
+                     </a></span>
+            {/block:ifsoundcloudurl}
+
+
+            {block:ifappleappurl}
+  <span>
+                     <a href="{text:apple app url}" {target}>
+                         App Store
+                     </a></span>
+            {/block:ifappleappurl}
+            {block:ifandroidappurl}
+  <span>
+                     <a href="{text:android app url}" {target}>
+                         Play Store
+                     </a></span>
+            {/block:ifandroidappurl}
+
+            {block:ifgoogleplusurl}
+  <span>
+                     <a href="{text:google plus url}" {target}>
+                         Google Plus
+                     </a></span>
+            {/block:ifgoogleplusurl}
+
+            {block:ifvimeourl}
+  <span>
+                     <a href="{text:vimeo url}" {target}>
+                         Vimeo
+                     </a></span>
+            {/block:ifvimeourl}
+
+            {block:ifyoutubeurl}
+  <span>
+                     <a href="{text:youtube url}" {target}>
+                         Youtube
+                     </a></span>
+            {/block:ifyoutubeurl}
+
+            {block:ifYelpurl}
+  <span>
+                     <a href="{text:Yelp url}" {target}>
+                         Yelp
+                     </a></span>
+            {/block:ifYelpurl}
+
+            {block:ifEmailAddress}
+  <span>
+                     <a href="mailto:{text:Email Address}" {target}>
+                         Contact
+                     </a></span>
+            {/block:ifEmailAddress}
+            {block:ifusearchivebutton}
+  <span>
+                     <a href="/archive" {target}>
+                         Archive
+                     </a></span>
+            {/block:ifusearchivebutton}
+            {block:AskEnabled}
+  <span>
+                       <a class='ask-trigger'>
+                           {AskLabel}
+                       </a></span>
+            {/block:AskEnabled}
+            {block:SubmissionsEnabled}
+  <span>
+                       <a class='submit-trigger'>
+                           {SubmitLabel}
+                       </a></span>
+            {block:SubmissionsEnabled}
+
+
+            {block:ifgithuburl}
+                                 <span>
+                     <a href="{text:Github URL}" {target}>
+                         Github
+                     </a></span>
+            {/block:ifgithuburl}
+
+            {block:if500pxurl} <span>
+                     <a href="{text:500px URL}" {target}>
+                         500px
+                     </a></span>
+            {/block:if500pxurl}
+
+            {block:ifmediumurl} <span>
+                     <a href="{text:Medium URL}" {target}>
+                         Medium
+                     </a></span>
+            {/block:ifmediumurl}
+
+            {block:ifdribbleurl} <span>
+                     <a href="{text:Dribble URL}" {target}>
+                         Dribble
+                     </a></span>
+            {/block:ifdribbleurl}
+            {block:ifbehenceurl} <span>
+                     <a href="{text:Behence URL}" {target}>
+                         Behence
+                     </a></span>
+            {/block:ifbehenceurl}
+
+            {block:ifpicasaurl} <span>
+                     <a href="{text:Picasa URL}" {target}>
+                         Picasa
+                     </a></span>
+            {/block:ifpicasaurl}
+
+            {block:ifredditurl} <span>
+                     <a href="{text:Reddit URL}" {target}>
+                         Reddit
+                     </a></span>
+            {/block:ifredditurl}
+
+            {block:ifbloggerurl} <span>
+                     <a href="{text:Blogger URL}" {target}>
+                         Blogger
+                     </a></span>
+            {/block:ifBloggerurl}
+            {block:ifdiigourl} <span>
+                     <a href="{text:Diigo URL}" {target}>
+                         Diigo
+                     </a></span>
+            {/block:ifdiigourl}
+            {block:ifspotifyurl} <span>
+                     <a href="{text:Spotify URL}" {target}>
+                         Spotify
+                     </a></span>
+            {/block:ifspotifyurl}
+            {block:ifhi5url} <span>
+                     <a href="{text:Hi5 URL}" {target}>
+                         Hi5
+                     </a></span>
+            {/block:ifhi5url}
+
+            {block:ifSnapchatUsername}
+                     <span>
+                     <a href="http://snapchat.com/add/{text:Snapchat Username}"
+                        {target}>
+                         Snapchat
+                     </a></span>
+            {/block:ifSnapchatUsername}
+
+            {block:ifEmailAddress}
+                     <span>
+                     <a href="mailto:{text:Email Address}?subject=Hello!"
+                        {target}>
+                         Contact
+                     </a></span>
+            {/block:ifEmailAddress}
+            <div {block:ifwebsite1url}style="margin-top:15px" {
+            /block:ifwebsite1url}>
+            {block:ifwebsite1url}
+                     <span>
+                        <a href="{text:Website 1 URL}">
+                            {text:Website 1 URL}
+                        </a>
+                     </span>
+            {block:ifwebsite1url}
+
+
+            {block:ifwebsite2url}
+                     <span>
+                        <a href="{text:Website 2 URL}">
+                            {text:Website 2 URL}
+                        </a>
+                     </span>
+            {block:ifwebsite2url}
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="trigger-buttons">
+    <a data-icon="&#xe022" original-icon="&#xe022" close-icon="&#xe023"
+       class="menu-trigger"></a>
+    <a data-icon="&#xe021" class="search-trigger"></a>
+</div-->
+
+
+    {block:ShowHeaderImage}
+        <img src="{HeaderImage}">
+    {/block:ShowHeaderImage}

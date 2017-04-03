@@ -33,7 +33,7 @@
         .tumblr_thumb{ width:100%;}
     </style>
 
-    <script type="text/javascript"
+    <!--script type="text/javascript"
             src="http://static.tumblr.com/cvhjz4y/JWSn5a9bq/jquery.min.js"></script>
 
     <script src="http://static.tumblr.com/eeiisdz/kVmoh6wnz/all-js.js"></script>
@@ -71,7 +71,7 @@
     </script>
 
     <link rel="stylesheet" type="text/css"
-          href="http://static.tumblr.com/dlyn8ge/m1nomkeuy/s-body.css">
+          href="http://static.tumblr.com/dlyn8ge/m1nomkeuy/s-body.css"-->
     {text:custom javascript 1}
     {text:custom javascript 2}
 
@@ -91,7 +91,7 @@
 
     </script>
 
-    <script type="javascript">
+    <!--script type="javascript">
         something;
         WebFontConfig = {
             google: {families: ['Lato:400,300,700,100:latin', 'Open+Sans:400,300,700,100:latin', 'Nothing+You+Could+Do', 'Roboto:400,100,300,500,700:latin', 'Nunito:300,400,700:latin', 'Montserrat:100,200,300,400,700:latin', 'Arimo:400,700:latin']}
@@ -104,7 +104,7 @@
             var s = document.getElementsByTagName('script')[0];
             s.parentNode.insertBefore(wf, s);
         })();
-    </script>
+    </script-->
 
     {block:Hidden}
     <!--

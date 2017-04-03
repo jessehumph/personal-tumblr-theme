@@ -599,7 +599,7 @@
 <body class="not-mobile">
 
 
-<div class="hidden-menu">
+<!--div class="hidden-menu">
     <div class="hidden-menu-close">X</div>
     <div class="hidden-menu-right-image"></div>
     <div class="hidden-menu-content">
@@ -898,8 +898,8 @@
 <div class="trigger-buttons">
     <a data-icon="&#xe022" original-icon="&#xe022" close-icon="&#xe023"
        class="menu-trigger"></a>
-    <!--a data-icon="&#xe021" class="search-trigger"></a-->
-</div>
+    <a data-icon="&#xe021" class="search-trigger"></a>
+</div-->
 
 
     {block:ShowHeaderImage}

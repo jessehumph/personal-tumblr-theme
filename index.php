@@ -839,12 +839,21 @@
     <!-- Posts -->
     {block:Posts}
         <section class="col-md-4 col-sm-6 col-12 tumblr_cell">
-            <img class="tumblr_thumb" src="res/post01.jpg"/>
+            {block:Photo}
+                <img class="tumblr_thumb" src="{PhotoURL-75sq}" alt="{PhotoAlt}"/>
+            {/block:Photo}
+
+
+            {block:Photoset}
+                {block:photos}
+                    <img class="tumblr_thumb" src="{PhotoURL-75sq}" alt="{PhotoAlt}"/>
+                {/block:photos}
+            {/block:Photoset}
         </section>
     {/block:Posts}
 
 
-        
+
     </div>
 </main>
 

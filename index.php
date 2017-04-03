@@ -850,7 +850,7 @@
                 {block:ifshowfirstimageofphotoset}
                 {block:photos}
                     <section class="col-md-4 col-sm-6 col-12 tumblr_cell">
-                        <img class="tumblr_thumb" src="{PhotoURL-75sq}" alt="{PhotoAlt}"/>
+                        <img class="tumblr_thumb" src="{PhotoURL-500sq}" alt="{PhotoAlt}"/>
                     </section>
                 {/block:photos}
                 {/block:ifshowfirstimageofphotoset}

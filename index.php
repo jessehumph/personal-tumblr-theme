@@ -842,10 +842,10 @@
     {block:Posts}
             {block:Photo}
                 <section class="col-md-4 col-sm-6 col-12 tumblr_cell">
-                    <div class="tumblr_thumb"
+                    <a class="tumblr_thumb" href="test"
                          style="background-image:url('{PhotoURL-500}');">
                         {PhotoAlt}
-                    </div>
+                    </a>
                 </section>
             {/block:Photo}
 
@@ -855,10 +855,10 @@
                     <section class="col-md-4 col-sm-6 col-12 tumblr_cell tumblr_photoset">
                         {block:ifshowfirstimageofphotoset}
                         {block:photos}
-                            <div class="tumblr_thumb"
+                            <a class="tumblr_thumb" href="test"
                                  style="background-image:url('{PhotoURL-500}');">
                                 {PhotoAlt}
-                            </div>
+                            </a>
 
                         {/block:photos}
                         {/block:ifshowfirstimageofphotoset}

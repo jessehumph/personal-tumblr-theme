@@ -719,7 +719,7 @@
             font-family:{font:Header Filter Font};
             {block:ifboldfiltertext}font-weight:bold;{/block:ifboldfiltertext}
             {block:ifitalicfiltertext}font-style:italic;{/block:ifitalicfiltertext}
-            color:{color:Header Filter Texts Color};
+            color:{color:Header Filter Texts Color} !important;
             border-bottom:1px solid {color:Header Filter Border Color};
         }
         .header_filter a:hover{

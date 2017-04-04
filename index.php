@@ -992,7 +992,7 @@
     <!-- Post -->
         {block:Photo}
             <section class="col-md-4 col-sm-6 col-12 tumblr_cell">
-                <a class="tumblr_thumb" href="{LinkURL}"
+                <a class="tumblr_thumb" href="{Caption}"
                      style="background-image:url('{PhotoURL-500}');">
                     {PhotoAlt}
                 </a>
@@ -1007,7 +1007,7 @@
     <!-- Post -->
         {block:Photo}
             <section class="col-md-4 col-sm-6 col-12 tumblr_cell">
-                <a class="tumblr_thumb" href="{LinkURL}"
+                <a class="tumblr_thumb" href="{Caption}"
                      style="background-image:url('{PhotoURL-500}');">
                     {PhotoAlt}
                 </a>

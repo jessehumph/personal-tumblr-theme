@@ -714,6 +714,10 @@
     </style>
 
     <style>
+        .header_filters{
+            max-width:600px;
+        }
+
         .header_filter a{
             font-size: {select:Header Filter Size};
             font-family:{font:Header Filter Font};
@@ -806,7 +810,7 @@
         {/block:iflogoimage}
 
     </a>
-    <nav class="container-fluid tumblr_grid">
+    <nav class="container-fluid tumblr_grid header_filters">
         <div class="row no-gutters tumblr_row">
 
             {block:ifHeaderFilter1}
@@ -993,7 +997,7 @@
         {block:Photo}
             <section class="col-md-4 col-sm-6 col-12 tumblr_cell">
                 {Caption}
-                
+
                 <a class="tumblr_thumb" href="{Permalink}"
                      style="background-image:url('{PhotoURL-500}');">
                     {PhotoAlt}

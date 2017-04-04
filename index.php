@@ -715,7 +715,7 @@
 
     <style>
         .header_filters{
-            max-width:600px;
+            max-width:400px;
         }
 
         .header_filter a{

@@ -724,8 +724,8 @@
         }
         .header_filter a:hover{
             cursor:pointer;
-            color:{color:Header Filter Hover Texts Color};
-            border-bottom:1px solid {color:Header Filter Hover Border Color};
+            color:{color:Header Filter Hover Texts Color} !important;
+            border-bottom:1px solid {color:Header Filter Hover Border Color} !important;
         }
     </style>
 
